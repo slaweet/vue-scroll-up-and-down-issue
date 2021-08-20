@@ -20,6 +20,7 @@ export default {
 }
 </script>
 
+<style lang="css" src="bootstrap/dist/css/bootstrap.css"></style>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
