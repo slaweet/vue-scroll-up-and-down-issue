@@ -1,17 +1,21 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <p v-for="i in 100" :key="i" class="alert alert-info m-3" > Mock element no. {{i}}</p>
     <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <scroll-up />
   </div>
 </template>
 
 <script>
+import 'vue-scroll-up/dist/style.css'
+import ScrollUp from 'vue-scroll-up'
 import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    ScrollUp
   }
 }
 </script>
